@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> #note{
+background-color: lightgrey;
+
+}
+
+
+.box{
+width: 100px; height: 100px;
+background: lightblue; position: relative;
+transition: width 2s;	/*Changes the width in 2 seconds time duration*/
+
+animation-name: animate;	/*Name mentioned to the animation*/
+animation-duration: 5s;	/*Time taken by animation to complete.*/
+animation-iteration-count: 2;	/*Repeats animation for two times*/
+}
+
+
+@keyframes animate {
+0% {background-color:red; left:0px; top:0px;}
+25% {background-color:yellow; left:200px; top:0px;} 50% {background-color:lightblue; left:0px; top:0px;} 75% {background-color:lime; left:200px; top:0px;} 100% {background-color:orange; left:0px; top:0px;}
+}
+
+
+.box:hover {	/*Increases the width of the box when box is mouse over.*/
+width: 300px;
+
+}
+</style>
+</head>
+<body>
+
+
+<h2>CSS3 Transition,Animation and Selector Example</h2>
+
+
+<p id="note">Hover over the box , to see the transition effect:</p>
+<br>
+<div class="box"></div>
+
+
+</body>
+</html>
+
